@@ -189,5 +189,3 @@ Open `http://localhost:8501` in your browser to access the 5-tab application.
 ## 📜 License & Citation
 - Dataset Citation: Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. *Expert Systems with Applications*, 36(2), 2473-2480.
 - License: Open-source educational and portfolio distribution under the MIT License.
-#   f i n s e n t i n a l  
- 
