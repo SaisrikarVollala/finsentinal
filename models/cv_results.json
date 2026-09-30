@@ -1,0 +1,43 @@
+{
+  "LogisticRegression": {
+    "cv_roc_auc": 0.7695118373814007,
+    "cv_pr_auc": 0.5153936998349188,
+    "cv_brier_score": 0.18883642948427162,
+    "std_threshold": 0.5,
+    "std_precision": 0.44585570250098205,
+    "std_recall": 0.6413637219815408,
+    "std_f1": 0.5260312065502858,
+    "optimal_threshold": 0.6,
+    "opt_precision": 0.499836867862969,
+    "opt_recall": 0.5771331700885289,
+    "opt_f1": 0.5357111635632485
+  },
+  "RandomForest": {
+    "cv_roc_auc": 0.783996509178794,
+    "cv_pr_auc": 0.5589707528652575,
+    "cv_brier_score": 0.17293035984039307,
+    "std_threshold": 0.5,
+    "std_precision": 0.48888212001218395,
+    "std_recall": 0.6046336409870032,
+    "std_f1": 0.5406315789473685,
+    "optimal_threshold": 0.5399999999999999,
+    "opt_precision": 0.5193066758194611,
+    "opt_recall": 0.5699755132793369,
+    "opt_f1": 0.5434626436781609
+  },
+  "XGBoost": {
+    "cv_roc_auc": 0.7892304533850115,
+    "cv_pr_auc": 0.5656872557434817,
+    "cv_brier_score": 0.17611227929592133,
+    "std_threshold": 0.5,
+    "std_precision": 0.46462167689161554,
+    "std_recall": 0.6419288001506875,
+    "std_f1": 0.5390699145839924,
+    "optimal_threshold": 0.59,
+    "opt_precision": 0.53962195565249,
+    "opt_recall": 0.559239028065549,
+    "opt_f1": 0.5492553880307095
+  },
+  "winning_model": "XGBoost",
+  "winning_threshold": 0.59
+}

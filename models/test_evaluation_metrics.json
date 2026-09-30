@@ -1,0 +1,164 @@
+{
+  "LogisticRegression": {
+    "roc_auc": 0.7520189657560766,
+    "pr_auc": 0.5013415122344361,
+    "brier_score": 0.19279301744739855,
+    "default_rate": 0.22116666666666668,
+    "standard_0_50": {
+      "threshold": 0.5,
+      "precision": 0.43426724137931033,
+      "recall": 0.6073850791258478,
+      "f1": 0.5064404649701539,
+      "specificity": 0.7753049432912476,
+      "balanced_accuracy": 0.6913450112085477,
+      "confusion_matrix": [
+        [
+          3623,
+          1050
+        ],
+        [
+          521,
+          806
+        ]
+      ],
+      "counts": {
+        "tn": 3623,
+        "fp": 1050,
+        "fn": 521,
+        "tp": 806
+      }
+    },
+    "optimal_threshold_eval": {
+      "threshold": 0.6,
+      "precision": 0.4808201058201058,
+      "recall": 0.5478522984174831,
+      "f1": 0.5121521662557238,
+      "specificity": 0.8320136956986947,
+      "balanced_accuracy": 0.6899329970580889,
+      "confusion_matrix": [
+        [
+          3888,
+          785
+        ],
+        [
+          600,
+          727
+        ]
+      ],
+      "counts": {
+        "tn": 3888,
+        "fp": 785,
+        "fn": 600,
+        "tp": 727
+      }
+    }
+  },
+  "RandomForest": {
+    "roc_auc": 0.7778025763614059,
+    "pr_auc": 0.5527771604094546,
+    "brier_score": 0.17584261298179626,
+    "default_rate": 0.22116666666666668,
+    "standard_0_50": {
+      "threshold": 0.5,
+      "precision": 0.4763331336129419,
+      "recall": 0.5990957045968349,
+      "f1": 0.5307076101468625,
+      "specificity": 0.8129681147014766,
+      "balanced_accuracy": 0.7060319096491557,
+      "confusion_matrix": [
+        [
+          3799,
+          874
+        ],
+        [
+          532,
+          795
+        ]
+      ],
+      "counts": {
+        "tn": 3799,
+        "fp": 874,
+        "fn": 532,
+        "tp": 795
+      }
+    },
+    "optimal_threshold_eval": {
+      "threshold": 0.5399999999999999,
+      "precision": 0.5136239782016349,
+      "recall": 0.5681989449886963,
+      "f1": 0.5395348837209303,
+      "specificity": 0.8472073614380483,
+      "balanced_accuracy": 0.7077031532133723,
+      "confusion_matrix": [
+        [
+          3959,
+          714
+        ],
+        [
+          573,
+          754
+        ]
+      ],
+      "counts": {
+        "tn": 3959,
+        "fp": 714,
+        "fn": 573,
+        "tp": 754
+      }
+    }
+  },
+  "XGBoost": {
+    "roc_auc": 0.7798606079498203,
+    "pr_auc": 0.5578412487473016,
+    "brier_score": 0.17968367040157318,
+    "default_rate": 0.22116666666666668,
+    "standard_0_50": {
+      "threshold": 0.5,
+      "precision": 0.4588555858310627,
+      "recall": 0.6345139412207988,
+      "f1": 0.5325743200506009,
+      "specificity": 0.7875026749411513,
+      "balanced_accuracy": 0.711008308080975,
+      "confusion_matrix": [
+        [
+          3680,
+          993
+        ],
+        [
+          485,
+          842
+        ]
+      ],
+      "counts": {
+        "tn": 3680,
+        "fp": 993,
+        "fn": 485,
+        "tp": 842
+      }
+    },
+    "optimal_threshold_eval": {
+      "threshold": 0.59,
+      "precision": 0.5268432355046528,
+      "recall": 0.5546345139412208,
+      "f1": 0.540381791483113,
+      "specificity": 0.8585491119195378,
+      "balanced_accuracy": 0.7065918129303792,
+      "confusion_matrix": [
+        [
+          4012,
+          661
+        ],
+        [
+          591,
+          736
+        ]
+      ],
+      "counts": {
+        "tn": 4012,
+        "fp": 661,
+        "fn": 591,
+        "tp": 736
+      }
+    }
+  }
+}

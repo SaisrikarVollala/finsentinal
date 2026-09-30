@@ -1,0 +1,154 @@
+{
+  "LIMIT_BAL": {
+    "description": "Amount of given credit in New Taiwan dollars (NT$), including individual and family/supplementary credit.",
+    "type": "numerical",
+    "unit": "NT$",
+    "valid_range": "[10000, 1000000]"
+  },
+  "SEX": {
+    "description": "Gender of the cardholder.",
+    "type": "categorical",
+    "categories": {
+      "1": "Male",
+      "2": "Female"
+    }
+  },
+  "EDUCATION": {
+    "description": "Education level of the cardholder.",
+    "type": "categorical",
+    "categories": {
+      "1": "Graduate School",
+      "2": "University",
+      "3": "High School",
+      "4": "Others",
+      "5": "Unknown",
+      "6": "Unknown",
+      "0": "Unknown"
+    },
+    "cleaned_categories": {
+      "1": "Graduate School",
+      "2": "University",
+      "3": "High School",
+      "4": "Others/Unknown"
+    }
+  },
+  "MARRIAGE": {
+    "description": "Marital status of the cardholder.",
+    "type": "categorical",
+    "categories": {
+      "1": "Married",
+      "2": "Single",
+      "3": "Others",
+      "0": "Unknown"
+    },
+    "cleaned_categories": {
+      "1": "Married",
+      "2": "Single",
+      "3": "Others"
+    }
+  },
+  "AGE": {
+    "description": "Age of the cardholder in years.",
+    "type": "numerical",
+    "unit": "years",
+    "valid_range": "[18, 100]"
+  },
+  "PAY_0": {
+    "description": "Repayment status in September 2005 (most recent month).",
+    "type": "categorical_ordinal",
+    "scale": "-2=No consumption/balance, -1=Paid in full, 0=Revolving credit used (min payment), 1=Delay 1 month, 2=Delay 2 months, ..., 8=Delay 8 months, 9=Delay 9+ months"
+  },
+  "PAY_2": {
+    "description": "Repayment status in August 2005.",
+    "type": "categorical_ordinal",
+    "scale": "-2=No consumption, -1=Paid in full, 0=Revolving credit, 1-9=Months delayed"
+  },
+  "PAY_3": {
+    "description": "Repayment status in July 2005.",
+    "type": "categorical_ordinal",
+    "scale": "-2=No consumption, -1=Paid in full, 0=Revolving credit, 1-9=Months delayed"
+  },
+  "PAY_4": {
+    "description": "Repayment status in June 2005.",
+    "type": "categorical_ordinal",
+    "scale": "-2=No consumption, -1=Paid in full, 0=Revolving credit, 1-9=Months delayed"
+  },
+  "PAY_5": {
+    "description": "Repayment status in May 2005.",
+    "type": "categorical_ordinal",
+    "scale": "-2=No consumption, -1=Paid in full, 0=Revolving credit, 1-9=Months delayed"
+  },
+  "PAY_6": {
+    "description": "Repayment status in April 2005 (oldest month).",
+    "type": "categorical_ordinal",
+    "scale": "-2=No consumption, -1=Paid in full, 0=Revolving credit, 1-9=Months delayed"
+  },
+  "BILL_AMT1": {
+    "description": "Amount of bill statement in September 2005 (NT$).",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "BILL_AMT2": {
+    "description": "Amount of bill statement in August 2005 (NT$).",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "BILL_AMT3": {
+    "description": "Amount of bill statement in July 2005 (NT$).",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "BILL_AMT4": {
+    "description": "Amount of bill statement in June 2005 (NT$).",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "BILL_AMT5": {
+    "description": "Amount of bill statement in May 2005 (NT$).",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "BILL_AMT6": {
+    "description": "Amount of bill statement in April 2005 (NT$).",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "PAY_AMT1": {
+    "description": "Amount paid in September 2005 (towards August statement) in NT$.",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "PAY_AMT2": {
+    "description": "Amount paid in August 2005 (towards July statement) in NT$.",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "PAY_AMT3": {
+    "description": "Amount paid in July 2005 (towards June statement) in NT$.",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "PAY_AMT4": {
+    "description": "Amount paid in June 2005 (towards May statement) in NT$.",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "PAY_AMT5": {
+    "description": "Amount paid in May 2005 (towards April statement) in NT$.",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "PAY_AMT6": {
+    "description": "Amount paid in April 2005 (towards March statement) in NT$.",
+    "type": "numerical",
+    "unit": "NT$"
+  },
+  "default_payment_next_month": {
+    "description": "Binary target: Did the customer default on the next month's payment (October 2005)?",
+    "type": "binary_target",
+    "values": {
+      "0": "Non-default",
+      "1": "Default"
+    }
+  }
+}
